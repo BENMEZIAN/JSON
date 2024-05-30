@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affichage JSON avec HTML et JS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            margin: 20px;
+        }
+        
+        .json-output {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 align="center">Affichage JSON avec JSON.parse()</h1>
+
+    <ol>
+        <li>
+            <div class="container">
+                <h2>Creating an Object from a JSON String</h2>
+                <span>String is : '{"name":"John", "age":30, "city":"New York"}'</span>
+                <p id="demo"></p>
+            </div>
+        </li>
+
+        <li>
+            <div class="container">
+                <h2>Convert a string into a date object.</h2>
+                <span>String is : '{"name":"John", "birth":"1986-12-14", "city":"New York"}'</span>
+                <p id="demo1"></p>
+            </div>
+        </li>
+
+        <li>
+            <div class="container">
+                <h2>Convert a string into a function.</h2>
+                <span>String is : '{"name":"John", "age":"function() {return 30;}", "city":"New York"}'</span>
+                <p id="demo2"></p>
+            </div>
+        </li>
+    </ol>
+
+    <h1 align="center">Affichage JSON avec JSON.stringify()</h1>
+
+    <ol>
+        <li>
+            <div class="container">
+                <h2>Create a JSON string from a JavaScript object.</h2>
+                <span>Object is : {"name":"John", "age":30, "city":"New York"}</span>
+                <p id="demo3"></p>
+            </div>
+        </li>
+
+        <li>
+            <div class="container">
+                <h2>Create a JSON string from a JavaScript array.</h2>
+                <span>Array is : ["John", "Peter", "Sally", "Jane"]</span>
+                <p id="demo4"></p>
+            </div>
+        </li>
+    </ol>
+
+    <h1 align="center">LocalStorage to handle JSON data</h1>
+    <div class="container">
+        <p id="demo5"></p>
+    </div>
+
+
+
+    <h1 align="center">Exemple d'affichage des données JSON</h1>
+
+    <div class="container">
+        <div id="jsonOutput" class="json-output"></div>
+    </div>
+
+
+    <script src="parse.js"></script>
+    <script src="stringify.js"></script>
+    <script src="localStorage.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+{
+    "string": "Bonjour, monde!",
+    "number": 42,
+    "boolean_true": true,
+    "boolean_false": false,
+    "null_value": null,
+    "object": {
+        "name": "Alice",
+        "age": 30,
+        "is_student": false
+    },
+    "array": [1, 2, 3, 4, 5],
+    "nested_array": [{
+            "id": 1,
+            "name": "Nested Object 1"
+        },
+        {
+            "id": 2,
+            "name": "Nested Object 2"
+        }
+    ]
+}
